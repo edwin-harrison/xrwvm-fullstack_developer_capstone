@@ -4,44 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="/static/style.css">
+
     <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
+
 <body>
-    <nav>
-        <div class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-            <div class="container-fluid">
-                <h2 style="padding-right: 5%;">Dealerships</h2>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkturquoise;">
+    <div class="container-fluid">
+        <h2 class="navbar-brand">Dealerships</h2>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="/contact">Contact Us</a>
+                </li>
+            </ul>
         </div>
-        <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-            <div class="banner" name="contact-header">
-                <!-- Insert header information here -->
-                 <img src="/static/contactus.png" alt="">
-                 
-                <h1>Contact Us</h1>
-                For inquiries, please contact us at:
-                <p>Email: contact@dealerships.com</p>
-                <p>Phone: (123) 456-7890</p>
-            </div>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container mt-5">
+
+    <div class="card shadow p-4">
+
+        <!-- HEADER IMAGE -->
+        <div class="text-center mb-4">
+            <img src="/static/cars.jpeg" class="img-fluid rounded" alt="Cars Banner">
         </div>
 
-    </nav>
+        <!-- TITLE -->
+        <h1 class="text-center">Contact Us</h1>
+        <p class="text-center text-muted">
+            For inquiries, please reach out to our team.
+        </p>
+
+        <hr>
+
+        <!-- CONTACT SECTION -->
+        <div class="row align-items-center">
+
+            <div class="col-md-4 text-center">
+                <img src="/static/contactus.png" class="img-fluid" alt="Contact Icon">
+            </div>
+
+            <div class="col-md-8">
+                <p><strong>Email:</strong> contact@dealerships.com</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Support Hours:</strong> Mon - Fri (9AM - 5PM)</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>
